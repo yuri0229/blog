@@ -23,7 +23,7 @@ function test($arr, $n){
     }
 
     for($i=$n; $i<$len; $i++){
-        if($i != $n){   /* 第一位无需移动 */
+        if($i != $n){   /* 字符移位，第一位无需移动 */
             $tmp = $arr[$i];
             $arr[$i] = $arr[$n];
             $arr[$n] = $tmp;
